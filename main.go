@@ -78,4 +78,14 @@ String`)
 	ages["Zen"] = 5
 	delete(ages, "John") //delete an element from a map
 	fmt.Println(ages)
+
+	for _, age := range ages {
+		if age > 21 {
+			fmt.Println("Old")
+		} else if age >= 10 && age <= 18 {
+			fmt.Println("Teenager")
+		} else {
+			fmt.Println("young")
+		}
+	}
 }
